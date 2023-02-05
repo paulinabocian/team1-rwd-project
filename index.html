@@ -176,8 +176,13 @@
           <div class="heading col-12">
             <h3 class="text-center">Zobacz zasoby:</h3>
           </div>
-          <div class="row text-center">
-            <div class="col-md-4">
+
+          <div
+            id="resources-carousel"
+            class="row text-center carousel slide"
+            data-ride="carousel"
+          >
+            <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4 carousel-item active">
               <div class="resource">
                 <i class="fa fa-solid fa-code fa-5x"></i>
                 <h3>Javascript</h3>
@@ -189,7 +194,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4 carousel-item">
               <div class="resource">
                 <i class="fa fa-solid fa-window-maximize fa-5x"></i>
                 <h3>Konsola</h3>
@@ -201,7 +206,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4 carousel-item">
               <div class="resource">
                 <i class="fa fa-duotone fa-wallet fa-5x"></i>
                 <h3>Krypto</h3>
@@ -213,6 +218,30 @@
                 </p>
               </div>
             </div>
+            <a
+              class="carousel-control-prev"
+              href="#resources-carousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#resources-carousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
