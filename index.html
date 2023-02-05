@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RWD - miniprojekt A8</title>
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/fixed.css" />
+  </head>
+
+  <body>
+    <!-- HOME, COURSE, FEATURES, RESOURCES, CLIENTS, CONTACT -->
+
+    <!--- Start HOME Section -->
+    <div id="home">
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="img/Logo.jpeg" alt="LOGO" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <!-- emmet: li.nav-item*6>a.nav-link -->
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Strona domowa</a>
+            </li>
+            <li class="nav-item">
+              <a href="#course" class="nav-link">Kurs</a>
+            </li>
+            <li class="nav-item">
+              <a href="#features" class="nav-link">Mozliwości</a>
+            </li>
+            <li class="nav-item">
+              <a href="#resources" class="nav-link">Zasoby</a>
+            </li>
+            <li class="nav-item">
+              <a href="#clients" class="nav-link">Opinie klientów</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="landing">
+        <div class="home-wrap">
+          <div class="home-inner"></div>
+        </div>
+      </div>
+
+      <div class="text-center caption">
+        <h1>Witaj na zajęciach z RWD!</h1>
+        <a class="btn btn-outline-secondary btn-lg" href="#course">
+          Wejdź na kurs
+        </a>
+      </div>
+    </div>
+    <!--- End HOME Section -->
+
+    <!--- Start COURSE Section -->
+    <div id="course">
+      <div class="text-center col-12">
+        <p>Zobacz więcej w linku:</p>
+
+        <a
+          class="btn btn-secondary btn-md"
+          href="https://www.podyplomowe.it"
+          target="_blank"
+          >Więcej o studiach</a
+        >
+      </div>
+    </div>
+    <!--- End COURSE Section -->
+
+    <!--- Start FEATURES Section -->
+    <div id="features">
+      <div class="text-center jumbotron">
+        <h2>Poznaj zagadnienia:</h2>
+        <ul class="features-list">
+          <li>Tworzenie layoutów HTML/CSS</li>
+          <li>Programowanie w JS z ES6+</li>
+          <li>React w najnowszej wersji</li>
+          <li>Współpraca projektowa w GIT</li>
+        </ul>
+        <hr class="line" />
+      </div>
+    </div>
+    <!--- End FEATURES Section -->
+
+    <!--- Start RESOURCES Section -->
+    <div id="resources">
+      <div class="jumbotron">
+        <div class="narrow">
+          <div class="heading col-12">
+            <h3 class="text-center">Zobacz zasoby:</h3>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-4">
+              <div class="resource">
+                <i class="fab fa-js-square fa-5x"></i>
+                <h3>Javascript</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  sequi mollitia cum nostrum aperiam dolores dignissimos
+                  laudantium iusto aut nisi sapiente adipisci quia, illo
+                  delectus, numquam architecto modi obcaecati tempora.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="resource">
+                <i class="fas fa-terminal fa-5x"></i>
+                <h3>Konsola</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  sequi mollitia cum nostrum aperiam dolores dignissimos
+                  laudantium iusto aut nisi sapiente adipisci quia, illo
+                  delectus, numquam architecto modi obcaecati tempora.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="resource">
+                <i class="fab fa-btc fa-5x"></i>
+                <h3>Krypto</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  sequi mollitia cum nostrum aperiam dolores dignissimos
+                  laudantium iusto aut nisi sapiente adipisci quia, illo
+                  delectus, numquam architecto modi obcaecati tempora.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- End RESOURCES Section -->
+
+    <!--- Start CLIENTS Section -->
+    <div id="clients">
+      <div class="jumbotron">
+        <div class="heading col-12">
+          <h3 class="text-center">Opinie klientów:</h3>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-4 col-lg-12 col-xl-4">
+                <img
+                  class="client img-fluid"
+                  src="img/client2.png"
+                  alt="client2"
+                />
+              </div>
+              <div class="col-md-8 col-lg-12 col-xl-8">
+                <blockquote class="blockquote text-center">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Facilis animi ea totam quam, itaque, consequuntur laboriosam
+                    laborum consectetur nam aliquid quisquam! Libero sint fugit
+                    sapiente animi asperiores assumenda nulla rem!
+                  </p>
+                </blockquote>
+                <hr class="jumbo-line" />
+                <footer class="blockquote-footer">
+                  <cite>Malwina z Warszawy</cite>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-4 col-lg-12 col-xl-4">
+                <img
+                  class="client img-fluid"
+                  src="img/client1.png"
+                  alt="client1"
+                />
+              </div>
+              <div class="col-md-8 col-lg-12 col-xl-8">
+                <blockquote class="blockquote text-center">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Facilis animi ea totam quam, itaque, consequuntur laboriosam
+                    laborum consectetur nam aliquid quisquam! Libero sint fugit
+                    sapiente animi asperiores assumenda nulla rem!
+                  </p>
+                </blockquote>
+                <hr class="jumbo-line" />
+                <footer class="blockquote-footer">
+                  <cite>Jacek z Otwocka</cite>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- End CLIENTS Section -->
+
+    <!-- start contact -->
+    <div id="contact">
+      <footer>
+        <div class="col-12 text-center jumbotron">
+          <h3 class="heading">Kontakt do twórców:</h3>
+          <img src="img/Logo.jpeg" alt="LOGO" />
+          <p>Lorem ipsum dolor sit amet.</p>
+          <strong>Informacje pod numerem 444333222</strong>
+          <hr />
+          <a href="https://www.youtube.com" target="_blank">
+            <i class="fab fa-youtube-square fa-2x"></i>
+          </a>
+          <a href="https://www.amazon.com" target="_blank">
+            <i class="fab fa-amazon fa-2x"></i>
+          </a>
+          <p>&copy; Copyright by .....</p>
+        </div>
+      </footer>
+    </div>
+    <!-- end contact -->
+
+    <!--- Script Source Files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+    <!--- End of Script Source Files -->
+  </body>
+</html>
