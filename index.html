@@ -47,6 +47,9 @@
               <a href="#clients" class="nav-link">Opinie klientów</a>
             </li>
             <li class="nav-item">
+              <a href="#author" class="nav-link">Autor</a>
+            </li>
+            <li class="nav-item">
               <a href="#contact" class="nav-link">Kontakt</a>
             </li>
           </ul>
@@ -60,9 +63,7 @@
 
       <div class="text-center caption">
         <h1>Witaj na zajęciach z RWD!</h1>
-        <a class="btn btn-outline-secondary btn-lg" href="#course">
-          Wejdź na kurs
-        </a>
+        <a class="btn btn-success btn-lg" href="#course"> Wejdź na kurs </a>
       </div>
     </div>
     <!--- End HOME Section -->
@@ -86,12 +87,83 @@
     <div id="features">
       <div class="text-center jumbotron">
         <h2>Poznaj zagadnienia:</h2>
-        <ul class="features-list">
+        <div class="row text-center">
+          <div class="card col-md-3" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Tworzenie layoutów HTML</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis modi blanditiis dolore, ea consequuntur repudiandae
+                labore voluptas! Aperiam aliquid ipsum, voluptates magni quia
+                unde eos aliquam? Dignissimos nostrum deserunt quas!
+              </p>
+              <a
+                class="btn btn-success btn-md"
+                href="https://www.podyplomowe.it"
+                target="_blank"
+                >Dowiedz się więcej!</a
+              >
+            </div>
+          </div>
+          <div class="card col-md-3" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Programowanie w JS z ES6+</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis modi blanditiis dolore, ea consequuntur repudiandae
+                labore voluptas! Aperiam aliquid ipsum, voluptates magni quia
+                unde eos aliquam? Dignissimos nostrum deserunt quas!
+              </p>
+              <a
+                class="btn btn-success btn-md"
+                href="https://www.podyplomowe.it"
+                target="_blank"
+                >Dowiedz się więcej!</a
+              >
+            </div>
+          </div>
+          <div class="card col-md-3" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">React w najnowszej wersji</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis modi blanditiis dolore, ea consequuntur repudiandae
+                labore voluptas! Aperiam aliquid ipsum, voluptates magni quia
+                unde eos aliquam? Dignissimos nostrum deserunt quas!
+              </p>
+              <a
+                class="btn btn-success btn-md"
+                href="https://www.podyplomowe.it"
+                target="_blank"
+                >Dowiedz się więcej!</a
+              >
+            </div>
+          </div>
+          <div class="card col-md-3" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Współpraca projektowa w GITL</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Reiciendis modi blanditiis dolore, ea consequuntur repudiandae
+                labore voluptas! Aperiam aliquid ipsum, voluptates magni quia
+                unde eos aliquam? Dignissimos nostrum deserunt quas!
+              </p>
+              <a
+                class="btn btn-success btn-md"
+                href="https://www.podyplomowe.it"
+                target="_blank"
+                >Dowiedz się więcej!</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- <ul class="features-list">
           <li>Tworzenie layoutów HTML/CSS</li>
           <li>Programowanie w JS z ES6+</li>
           <li>React w najnowszej wersji</li>
           <li>Współpraca projektowa w GIT</li>
-        </ul>
+        </ul> -->
         <hr class="line" />
       </div>
     </div>
@@ -104,10 +176,15 @@
           <div class="heading col-12">
             <h3 class="text-center">Zobacz zasoby:</h3>
           </div>
-          <div class="row text-center">
-            <div class="col-md-4">
+
+          <div
+            id="resources-carousel"
+            class="row text-center carousel slide"
+            data-ride="carousel"
+          >
+            <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4 carousel-item active">
               <div class="resource">
-                <i class="fab fa-js-square fa-5x"></i>
+                <i class="fa fa-solid fa-code fa-5x"></i>
                 <h3>Javascript</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
@@ -117,9 +194,9 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4 carousel-item">
               <div class="resource">
-                <i class="fas fa-terminal fa-5x"></i>
+                <i class="fa fa-solid fa-window-maximize fa-5x"></i>
                 <h3>Konsola</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
@@ -129,9 +206,9 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4 carousel-item">
               <div class="resource">
-                <i class="fab fa-btc fa-5x"></i>
+                <i class="fa fa-duotone fa-wallet fa-5x"></i>
                 <h3>Krypto</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
@@ -141,6 +218,30 @@
                 </p>
               </div>
             </div>
+            <a
+              class="carousel-control-prev"
+              href="#resources-carousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#resources-carousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
@@ -209,11 +310,93 @@
     </div>
     <!--- End CLIENTS Section -->
 
+<!-- start authors section  -->
+
+    <div id="author">
+      <div class="jumbotron">
+        <div class="heading col-12">
+          <h3 class="text-center">O autorze:</h3>
+        </div>
+        <div class="row text-center">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-md-3 col-lg-4 col-xl-4">
+                <img
+                  class="client img-fluid"
+                  src="img/client2.png"
+                  alt="client2"
+                />
+              </div>
+              <div class="col-md-9 col-lg-8 col-xl-8">
+                <blockquote class="blockquote text-center">
+                  <p>
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum at dignissimos incidunt quasi assumenda quo reiciendis, commodi neque cupiditate laudantium est omnis fuga, quisquam deleniti, architecto ratione quis itaque nesciunt.
+                   Voluptatibus fuga nihil quisquam odio reprehenderit omnis doloribus architecto. Repudiandae voluptatem dignissimos porro. Nihil temporibus, illum veniam illo ullam, consequuntur libero enim magnam ab sequi hic ipsum rerum, eveniet sit.
+                   Explicabo repellendus quam iure quibusdam placeat ut, qui nostrum voluptatem est fugiat fuga tempore voluptas consequuntur a quia exercitationem nemo, vero voluptatibus consequatur hic laborum amet. Vero consectetur quam explicabo!
+                   Sequi expedita ab quis distinctio perferendis unde voluptatum? Ab earum similique, laboriosam hic quos saepe odit dolorem ducimus eius neque nisi eum tenetur aliquid dignissimos quisquam alias ratione repellat necessitatibus.
+                   Error sed, quos molestiae at impedit consectetur cum ut culpa reiciendis ad dolores numquam natus voluptate vitae facilis magnam. Corporis ut odio aliquam laboriosam odit sint rerum aspernatur. Accusantium, delectus.
+                  </p>
+                </blockquote>
+                <hr class="jumbo-line" />
+                <footer class="blockquote-footer">
+                  <cite>Malwina Malwina</cite>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <!-- start contact -->
     <div id="contact">
       <footer>
-        <div class="col-12 text-center jumbotron">
-          <h3 class="heading">Kontakt do twórców:</h3>
+        <div class="col-12 jumbotron text-center">
+          <h3 class="heading text-center">Kontakt do twórców</h3>
+          <h4 class="heading text-center">Napisz do Nas!</h3>
+          <form>
+            <div class="form-group row">
+              <div class="col-md-6 mx-auto">
+                <label for="exampleFormControlInput1">Imię i nazwisko</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-6 mx-auto">
+                <label for="exampleFormControlInput1">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-6 mx-auto">
+                <label for="exampleFormControlTextarea1">Wiadomość</label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-6 mx-auto">
+                <button class="btn btn-secondary btn-md" type="submit">
+                  Wyślij
+                </button>
+              </div>
+            </div>
+          </form>
+
           <img src="img/Logo.jpeg" alt="LOGO" />
           <p>Lorem ipsum dolor sit amet.</p>
           <strong>Informacje pod numerem 444333222</strong>
@@ -224,7 +407,7 @@
           <a href="https://www.amazon.com" target="_blank">
             <i class="fab fa-amazon fa-2x"></i>
           </a>
-          <p>&copy; Copyright by .....</p>
+          <p>&copy; Copyright by team2</p>
         </div>
       </footer>
     </div>
